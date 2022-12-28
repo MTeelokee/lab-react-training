@@ -1,0 +1,10 @@
+.containerIdcard{
+    display: flex;
+    border: solid 1px black;
+    margin: 5px;
+}
+
+.marg{
+margin: 5px;
+}
+
