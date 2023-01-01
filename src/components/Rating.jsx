@@ -1,3 +1,4 @@
+import '../css/rating.css'
 export default function Rating({ children }) {
   let currentStarValue = Math.round(Number(children[0]));
   const fullStar = '★';
@@ -7,7 +8,7 @@ export default function Rating({ children }) {
     fullStar.repeat(currentStarValue) + emptyStar.repeat(remainingStartCount);
   return (
     <>
-      <div>{finalResult}</div>
+      <div className='ratings'>{finalResult}</div>
     </>
   );
 }

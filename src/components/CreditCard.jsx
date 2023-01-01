@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/creditCard.css';
-import visaImg from '../../src/assets/images/visa.png';
 
 export default function CreditCard({
   type,
@@ -11,16 +10,24 @@ export default function CreditCard({
   owner,
   bgColor
 }) {
-  /* let currentType = bank.toString()
-let currentImgPath = {visa: '../assets/images/visa.png', mc:'../assets/images/master-card.svg'}
-let current 
-currentType === 'Visa' ? current = currentImgPath.visa : current = currentImgPath.mc  
-console.log(currentType) */
+let currentType = type.toString()
+let currentImgPath = {visa: '/visa.png', mc:"/master-card.svg"}
+let current =''
+console.log(currentType)
+if(currentType === 'Visa' ){
+  current = currentImgPath.visa
+}
+else{
+  current = currentImgPath.mc 
+}
+
   return (
+    
     <>
+
       <div className="backgroundCreditCard" style={{ backgroundColor: `${bgColor}` }}>
         <div className="containerCreditCard">
-          <img className="creditCardType" src={visaImg} alt="" />
+          <img className="creditCardType" src={current} alt="" />
           <div className="cardNumber">
             {number}
           </div>

@@ -1,0 +1,23 @@
+.driverImg {
+  height: 100px;
+  width:100px;
+  border-radius: 50%;
+}
+
+.containerCard{
+background-color: #415cbb;
+margin: 10px;
+border-radius: 15px;
+height: 160px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: x-large;
+font-weight:700;
+
+}
+
+.pannelRight{
+
+}
